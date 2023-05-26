@@ -57,10 +57,6 @@ const User = ({ person }) => {
   const { user } = useSelector((state) => state.authReducer.authData);
   const dispatch = useDispatch()
 
-  const refreshPage=()=> {
-    window.location.reload(false);
-  }
-
 
   const [following, setFollowing] = useState(
     person.followers.includes(user._id)
@@ -71,8 +67,6 @@ const User = ({ person }) => {
     ? dispatch(unfollowUser(person._id, user)) 
     : dispatch(followUser(person._id, user))
     setFollowing((prev) => !prev);
-    refreshPage()
-  
   };
 
 
