@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 
+// Serving
 const API = axios.create({ baseURL: 'https://social-media-app-server-flax.vercel.app' });
 
 API.interceptors.request.use((req) => {
