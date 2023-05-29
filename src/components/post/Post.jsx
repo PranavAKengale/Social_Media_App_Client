@@ -6,7 +6,6 @@ import Heart from '../../img/like.png'
 import NotLike from '../../img/notlike.png'
 import { useSelector } from 'react-redux'
 import { likePost } from '../../API/PostRequest'
-// import { likePost } from '../../../../server_side/Controllers/PostController'
 
 // const Post = ({data}) => {
 //   return (
